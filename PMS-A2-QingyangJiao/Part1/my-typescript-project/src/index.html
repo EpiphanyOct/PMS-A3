@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Inventory Management System</h1>
+    <form id="itemForm">
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" required>
+      <label for="itemCategory">Category:</label>
+      <select id="itemCategory" required>
+        <option value="Electronics">Electronics</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Tools">Tools</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+      </select>
+      <label for="itemQuantity">Quantity:</label>
+      <input type="number" id="itemQuantity" required>
+      <label for="itemPrice">Price:</label>
+      <input type="number" id="itemPrice" required>
+      <label for="itemSupplier">Supplier Name:</label>
+      <input type="text" id="itemSupplier" required>
+      <label for="itemStockStatus">Stock Status:</label>
+      <select id="itemStockStatus" required>
+        <option value="In Stock">In Stock</option>
+        <option value="Low Stock">Low Stock</option>
+        <option value="Out of Stock">Out of Stock</option>
+      </select>
+      <label for="itemFeatured">Featured Item:</label>
+      <input type="checkbox" id="itemFeatured">
+      <label for="itemSpecialNote">Special Note:</label>
+      <input type="text" id="itemSpecialNote">
+      <button type="submit">Add Item</button>
+    </form>
+    <button id="deleteItem">Delete Item</button>
+    <button id="searchItem">Search Item</button>
+    <div id="itemList"></div>
+    <div id="featuredItems"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
