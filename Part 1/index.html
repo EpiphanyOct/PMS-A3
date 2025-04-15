@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>库存管理系统</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <div id="app">  
+        <h1>库存管理系统</h1>  
+        <form id="itemForm">  
+            <input type="text" id="itemId" placeholder="物品ID" required>  
+            <input type="text" id="itemName" placeholder="物品名称" required>  
+            <select id="category" required>  
+                <option value="">选择类别</option>  
+                <option value="Electronics">电子产品</option>  
+                <option value="Furniture">家具</option>  
+                <option value="Clothing">服装</option>  
+                <option value="Tools">工具</option>  
+                <option value="Miscellaneous">杂项</option>  
+            </select>  
+            <input type="number" id="quantity" placeholder="数量" required>  
+            <input type="number" id="price" placeholder="价格" required>  
+            <input type="text" id="supplierName" placeholder="供应商名称" required>  
+            <select id="stockStatus" required>  
+                <option value="In Stock">库存</option>  
+                <option value="Low Stock">低库存</option>  
+                <option value="Out of Stock">缺货</option>  
+            </select>  
+            <select id="featuredItem">  
+                <option value="No">否</option>  
+                <option value="Yes">是</option>  
+            </select>  
+            <textarea id="specialNote" placeholder="特别备注"></textarea>  
+            <button type="submit">添加物品</button>  
+        </form>  
+        <div id="itemList"></div>  
+    </div>  
+    <script src="app.js"></script>  
+</body>  
+</html>     

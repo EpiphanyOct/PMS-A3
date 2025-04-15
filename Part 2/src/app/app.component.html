@@ -1,0 +1,38 @@
+<nav>  
+  <ul>  
+    <li><a routerLink="/homepage">Homepage</a></li>  
+    <li><a routerLink="/item-manager">Item Manager</a></li>  
+    <li><a routerLink="/item-search">Item Search</a></li>  
+    <li><a routerLink="/privacy">Privacy</a></li>  
+    <li><a routerLink="/help">Help</a></li>  
+  </ul>  
+</nav>  
+
+
+<router-outlet></router-outlet>  
+
+<style>  
+  nav {  
+    background-color: #f8f9fa;  
+    padding: 10px;  
+  }  
+
+  ul {  
+    list-style-type: none;  
+    padding: 0;  
+  }  
+
+  li {  
+    display: inline;  
+    margin-right: 15px;  
+  }  
+
+  a {  
+    text-decoration: none;  
+    color: #007bff;  
+  }  
+
+  a:hover {  
+    text-decoration: underline;  
+  }  
+</style>  
