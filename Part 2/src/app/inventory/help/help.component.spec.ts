@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemManagerComponent } from './item-manager.component';
+import { HelpComponent } from './help.component';
 
-describe('ItemManagerComponent', () => {
-  let component: ItemManagerComponent;
-  let fixture: ComponentFixture<ItemManagerComponent>;
+describe('HelpComponent', () => {
+  let component: HelpComponent;
+  let fixture: ComponentFixture<HelpComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ItemManagerComponent]
+      imports: [HelpComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ItemManagerComponent);
+    fixture = TestBed.createComponent(HelpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemSearchComponent } from './item-search.component';
+import { ManageComponent } from './manage.component';
 
-describe('ItemSearchComponent', () => {
-  let component: ItemSearchComponent;
-  let fixture: ComponentFixture<ItemSearchComponent>;
+describe('ManageComponent', () => {
+  let component: ManageComponent;
+  let fixture: ComponentFixture<ManageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ItemSearchComponent]
+      imports: [ManageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ItemSearchComponent);
+    fixture = TestBed.createComponent(ManageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
