@@ -1,0 +1,1 @@
+[ERROR] Error loading @ionic/angular package.json: Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package' is not defined by "exports" in C:\Users\22742\inventoryApp\node_modules\@ionic\angular\package.json
